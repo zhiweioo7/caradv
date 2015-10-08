@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">新美汽车服务</string>
+    <string name="action_settings">Settings</string>
+    <string name="text">text</string>
+	<string name="back">返回</string>
+	<string name="cancel">取消</string>
+	<string name="determine">确定</string>
+	<string name="browse">浏览</string>
+	<string name="remind">提示</string>
+	<string name="backpage">后退</string>
+	<string name="nodata">服务器错误</string>
+	<string name="baiduerror">定位失败，请检查网络设置或者GPS</string>
+	
+	<string name="index_title">新美汽车服务</string>
+	<string name="index_nonumber">找不到相关号码</string>
+	<string name="index_makephonecall">拨打电话</string>
+	<string name="index_call">拨打</string>
+	
+	<string name="login_title">登陆</string>
+	<string name="login_differencedevice">您在不同的设备上登陆，请完成验证后再次登陆</string>
+	<string name="login_autologin">正在自动登陆，请稍后。轻按返回键取消</string>
+	<string name="reg_waitverifycode">请等待</string>
+	<string name="alreadysendverifycode">验证手机号码成功，已经发送验证码，请注意查收</string>
+    <string name="reg_verifycodewrong">验证码错误</string>
+    <string name="reg_getverifycodefaild">验证码获取失败，请稍后重试</string>
+	<string name="register">注册</string>
+	<string name="verifyphone">验证手机</string>
+	<string name="verifyphone_success">验证手机成功</string>
+	<string name="usernameinput">0123456789</string>
+	<string name="pwdinput">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+	<string name="verifycountdown">重新发送验证码(%1$s秒)</string>
+	<string name="verifyremind">发送验证码</string>
+	<string name="forgetpwd_remind">你的手机将会收到\n一条带有4位数字的验证码信息</string>
+	<string name="forgetpwd_modifyremind">请重新设置您的密码</string>
+	<string name="forgetpwd_title">忘记密码</string>
+	<string name="forgetpwd_modifysuccess">修改密码成功</string>
+	<string name="phonenumber_wrong">您的手机号码输入有误</string>
+	<string name="verifycode_wrong">您的验证码输入有误</string>
+	<string name="password_wrong">您的密码输入有误</string>
+	<string name="repassword_wrong">两次输入密码不一致</string>
+	<string name="invitecode_wrong">请输入6位数字加字母的邀请码</string>
+	
+	<string name="regex_phonenumber">^(1[3|4|5|8][0-9])[0-9]{8}$</string>
+    <string name="regex_password">^[0-9a-zA-Z]{6,16}$</string>
+    <string name="regex_verifycode">^[0-9]{4}$</string>
+    <string name="regex_invitecode">^[0-9A-Za-z]{6}$</string>
+</resources>

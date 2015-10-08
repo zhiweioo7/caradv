@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="10" >
+
+    <View
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="6"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/c12dp" >
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textSize="@dimen/textsize" />
+
+            <TextView
+                android:id="@+id/dialog_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/determine"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/textmediumsize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/c24dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/c1px"
+            android:background="@color/gray_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/dialog_cancel"
+                style="@style/BtnDialogStyle"
+                android:layout_marginBottom="@dimen/c6dp"
+                android:layout_marginLeft="@dimen/c6dp"
+                android:layout_weight="1"
+                android:text="@string/text"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/dialog_divider"
+                android:layout_width="@dimen/c1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/c6dp"
+                android:background="@color/gray_line"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/dialog_determine"
+                style="@style/BtnDialogStyle"
+                android:layout_marginBottom="@dimen/c6dp"
+                android:layout_marginRight="@dimen/c6dp"
+                android:layout_weight="1"
+                android:text="@string/determine"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
+
+</LinearLayout>

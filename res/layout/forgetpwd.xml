@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reg_bg"
+    android:orientation="vertical"
+    tools:context=".ForgetPwdPage" >
+
+    <include layout="@layout/base_head" />
+
+    <com.zxh.flatui.views.FlatTextView
+        android:id="@+id/remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/c24dp"
+        android:layout_marginTop="@dimen/c24dp"
+        android:gravity="center"
+        android:text="请输入你在注册时的手机号\n以便获取验证码"
+        android:textSize="@dimen/titlesize"
+        flatui:fl_textColor="fl_main"
+        flatui:fl_theme="@array/UITheme" />
+
+    <LinearLayout
+        android:id="@+id/verify_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.zxh.flatui.views.FlatEditText
+            android:id="@+id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/c6dp"
+            android:layout_marginBottom="@dimen/c9dp"
+            android:layout_marginTop="@dimen/c9dp"
+            android:digits="@string/pwdinput"
+            android:ems="10"
+            android:hint="请输入手机号"
+            android:includeFontPadding="true"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textSize="@dimen/textsize"
+            flatui:fl_fieldStyle="fl_transparent"
+            flatui:fl_theme="@array/UITheme" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/modify_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.zxh.flatui.views.FlatEditText
+            android:id="@+id/verifycode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/c6dp"
+            android:layout_marginBottom="@dimen/c9dp"
+            android:layout_marginTop="@dimen/c9dp"
+            android:ems="10"
+            android:hint="请输入收到的验证码"
+            android:includeFontPadding="true"
+            android:inputType="number"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:textSize="@dimen/textsize"
+            flatui:fl_fieldStyle="fl_transparent"
+            flatui:fl_theme="@array/UITheme" />
+
+        <com.zxh.flatui.views.FlatButton
+            android:id="@+id/request_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/c6dp"
+            android:text="@string/determine"
+            android:textSize="@dimen/textsize"
+            flatui:fl_fieldStyle="fl_transparent"
+            flatui:fl_theme="@array/UITheme" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/modifypwd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.zxh.flatui.views.FlatEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/c6dp"
+            android:layout_marginBottom="@dimen/c9dp"
+            android:layout_marginTop="@dimen/c9dp"
+            android:digits="@string/pwdinput"
+            android:ems="10"
+            android:hint="请输入6-16位密码"
+            android:includeFontPadding="true"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:textSize="@dimen/textsize"
+            flatui:fl_fieldStyle="fl_transparent"
+            flatui:fl_theme="@array/UITheme" />
+
+        <com.zxh.flatui.views.FlatEditText
+            android:id="@+id/repassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/c6dp"
+            android:layout_marginBottom="@dimen/c9dp"
+            android:layout_marginTop="@dimen/c9dp"
+            android:digits="@string/pwdinput"
+            android:ems="10"
+            android:hint="请重新输入密码"
+            android:includeFontPadding="true"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:textSize="@dimen/textsize"
+            flatui:fl_fieldStyle="fl_transparent"
+            flatui:fl_theme="@array/UITheme" />
+
+        <com.zxh.flatui.views.FlatButton
+            android:id="@+id/pwd_modify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/c6dp"
+            android:text="@string/determine"
+            android:textSize="@dimen/textsize"
+            flatui:fl_fieldStyle="fl_transparent"
+            flatui:fl_theme="@array/UITheme" />
+    </LinearLayout>
+
+    <com.zxh.flatui.views.FlatButton
+        android:id="@+id/send_verifycode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/c6dp"
+        android:text="@string/verifyremind"
+        android:textSize="@dimen/textsize"
+        flatui:fl_fieldStyle="fl_transparent"
+        flatui:fl_theme="@array/UITheme" />
+
+</LinearLayout>
